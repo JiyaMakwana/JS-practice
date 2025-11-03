@@ -4,6 +4,7 @@
 // btn.style.color="white";
 
 let btn=document.querySelector("#togBtn");
+let body=document.querySelector("body");
 let currMode="light";
 
  btn.addEventListener("click",()=>{
@@ -11,11 +12,13 @@ let currMode="light";
     if(currMode==="light")
     {
         currMode="dark";
-        document.querySelector("body").style.backgroundColor="blue";
+        //document.querySelector("body").style.backgroundColor="blue";
+        body.classList.add("dark");
     }
     else{
         currMode="light";
-        document.querySelector("body").style.backgroundColor="yellow";
+        //document.querySelector("body").style.backgroundColor="yellow";
+        body.classList.add("light");
     }
 
     console.log(currMode);
