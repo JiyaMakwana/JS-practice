@@ -1,0 +1,73 @@
+WEEK 1 — JavaScript Daily Practice
+
+Day 2 – Strings
+
+    Reverse a string without using built-in reverse functions.
+
+    Count the number of vowels and consonants in a string.
+
+    Check if a string is a palindrome.
+
+    Convert a string to title case (capitalize first letter of each word).
+
+    Find the longest word in a given sentence.
+
+Day 3 – Arrays
+
+    Find the maximum and minimum element in an array.
+
+    Reverse an array without using reverse().
+
+    Remove duplicates from an array.
+
+    Find the sum of all elements in an array.
+
+    Count how many times each element appears in an array.
+
+Day 4 – Functions & Scope
+
+    Write a function to calculate the factorial of a number.
+
+    Write a function that returns the nth Fibonacci number.
+
+    Create a function that checks whether a number is prime.
+
+    Demonstrate the difference between var, let, and const using examples.
+
+    Write an arrow function to find the average of numbers in an array.
+
+Day 5 – Objects & JSON
+
+    Create an object representing a student (name, age, marks, course) and display its data.
+
+    Add and delete properties dynamically from the object.
+
+    Convert an object to JSON and back to an object.
+
+    Count how many keys are present in an object.
+
+    Write a function that merges two objects.
+
+Day 6 – Array Methods Practice
+
+    Use map() to multiply all array elements by 2.
+
+    Use filter() to extract all even numbers from an array.
+
+    Use reduce() to find the sum of all array elements.
+
+    Use find() to get the first number greater than 10.
+
+    Combine map() and filter() to return squares of even numbers.
+
+Day 7 – DOM & Event Practice
+
+    Create a button that changes the page background color on click.
+
+    Make a counter with increment, decrement, and reset buttons.
+
+    Create a form that displays input data below it after submission.
+
+    Change the text of a paragraph when you hover over it.
+
+    Toggle between light and dark mode using a button.
