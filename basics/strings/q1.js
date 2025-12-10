@@ -39,3 +39,20 @@ function approach2(str){
 }
 console.log("app1::" + approach1("jiya"));
 console.log("app2::" + approach2("jiya"));
+
+// Find if the middle character of a string is a vowel.
+// dry run  -> find mid index, midindex is same to str[mid], check vowels is their or not
+function checkVowel(str)
+{
+    let midIdx=Math.floor((str.length-1)/2);
+    let midChar=str[midIdx];
+    let vowels="aeiouAEIOU";
+
+    if(vowels.includes(midChar)){
+        console.log(`is vowel:: ${midChar}`);
+    }
+    else{
+        console.log(`not vowel:: ${midChar}`);
+    }
+}
+checkVowel("jiya");
