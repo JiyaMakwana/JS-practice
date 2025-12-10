@@ -56,3 +56,39 @@ function checkVowel(str)
     }
 }
 checkVowel("jiya");
+
+// Check if the 5th index character exists or not.
+function fiveIndex(str)
+{
+    if(str[5] !== undefined)
+    {
+        console.log("Exists::" + str[5]);
+    }
+    else{
+        console.log("Not exists");
+    }
+}
+fiveIndex("jiya makwana");
+
+// ✂️ slice(), substring(), substr()
+
+// Extract the first 3 letters of a string.
+function first3(str)
+{
+    console.log(str.slice(0,3));
+}
+first3("jiya");
+
+// Extract everything after index 4.    ->works with all
+function after4(str)
+{
+    console.log(str.slice(4));
+}
+after4("jiya makwana");
+
+// Extract the last 5 characters of a string.
+function last5(str)
+{
+    console.log(str.slice(-5));
+}
+last5("jiya makwana");
