@@ -4,3 +4,38 @@ function indexing(str)
     return `first::${str[0]}, last::${str[str.length-1]} `;
 }
 console.log(indexing("jiya"));
+
+// Given a string, print all characters with their index number.
+function printIdx(str){
+    for(let i=0;i<str.length;i++)
+    {
+       console.log(`${i}:: ${str[i]}`);
+    }
+}
+printIdx("jiya");
+
+// Count how many characters are in the string without using .length (use a loop).
+function approach1(str){
+    let count=0;
+
+    for(let char in str)
+    {
+        count++;
+    }
+    return count;
+}
+
+function approach2(str){
+    let count=0;
+
+    //we stop when index becomes undefined
+    //  0:: j   1:: i   2:: y   3:: a   4:: undefined
+    //loop until str[i] not becomes undefined
+    for(let i=0; str[i] !==undefined; i++)
+    {
+        count++;
+    }
+    return count;
+}
+console.log("app1::" + approach1("jiya"));
+console.log("app2::" + approach2("jiya"));
