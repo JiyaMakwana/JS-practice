@@ -163,3 +163,34 @@ function titleCase(sentence)
     return result;
 }
 console.log(titleCase("i am jiya"));
+
+// Convert only the first letter to uppercase and rest lowercase.
+// dry run
+/*      - take 1st word of senetence
+        - char at 0 index-> to uppercase
+        - get rest of the string and lowercase them nd join it
+*/
+function capitalize(str)
+{
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+console.log(capitalize("my NaMe iS DelulU"));
+
+// Toggle case → "aBcDe" → "AbCdE".
+function toggleCase(str)
+{
+    let result="";
+    for(let i=0;i<=str.length-1;i++)
+    {
+         if(str[i] === str[i].toLowerCase())
+        {
+            result += str[i].toUpperCase();
+        }
+        else{
+            result+= str[i].toLowerCase();
+        }
+    }
+    return result;
+   
+}
+console.log(toggleCase("aBcDe"));
