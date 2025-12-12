@@ -92,3 +92,74 @@ function last5(str)
     console.log(str.slice(-5));
 }
 last5("jiya makwana");
+
+// Using slice(), get the string in reverse order (advanced).
+function reverseStr(str)
+{
+    let reversed=" ";
+
+    for(let i=str.length-1;i>=0;i--)
+    {
+        reversed += str.slice(i,i+1);
+    }
+    return reversed;
+}
+console.log(reverseStr("jiya"));
+
+// Compare output of slice(2, 6) vs substring(2, 6) vs substr(2, 4) for the same string.
+function checkOutput(str)
+{
+    console.log(str.slice(2,6));
+    console.log(str.substring(6,2));
+    console.log(str.substr(2,4));
+}
+checkOutput("012345678");
+
+// Extract a “word” from a sentence using .slice() when start and end index are given.
+function extractWord(str,startIndex,endIndex)
+{
+    let word=str.slice(startIndex,endIndex);
+
+    console.log(word);
+}
+extractWord("i am a guitarist",7,16);
+
+// Remove the first and last character using .slice().
+function removeFirstLast(str)
+{
+    let removeChar=str.slice(1,-1);
+    console.log(removeChar);
+}
+removeFirstLast("jiya");
+
+// 🔡 Case Conversion (toUpperCase / toLowerCase)
+
+// Convert a sentence into Title Case (each word starts with capital).
+// dry run
+    /*
+        1 -> whole sentence to lowercase
+        2 -> spilt the words in sentence and create a empty string to store result
+        3 -> loop through each words
+                -> extract one word
+                -> word[0]->to upperCase (J), and concat rest of the remaining letters of word by slice (+iya)
+                -> store it in result
+        4 -> return result      
+    */
+function titleCase(sentence)
+{
+    sentence=sentence.toLowerCase();
+    let words=sentence.split(" ");
+    let result="";
+
+    for(let i=0;i<words.length;i++)
+    {
+        let word=words[i];
+        let titleC=word[0].toUpperCase() + word.slice(1);
+        result += titleC;
+
+        // to add space between words
+        if(i< words.length-1) result += " ";
+    }
+    return result;
+}
+console.log(titleCase("i am jiya"));
