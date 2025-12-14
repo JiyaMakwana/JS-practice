@@ -7,6 +7,7 @@ function swap(a,b)
 
     //with third var
     let temp=0;
+    
     temp=a;
     a=b;
     b=temp;
