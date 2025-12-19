@@ -16,13 +16,7 @@
         /* border-radius: 16px; */
     }
 
-    /* IMAGE FIX */
-    .img-container img,
-    .img-container-p2 img {
-        width: 100%;
-        height: auto;
-        transform: translate(-20%, -35%);
-    }
+    
 
     /* TOP ICON */
     .img-container-p2 i {
