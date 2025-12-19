@@ -240,3 +240,35 @@ function checkUserName(uname)
     return "no numbers";
 }
 console.log(checkUserName("jiya123"));
+
+//verify if email endswith @gmail.com
+function verifyEmail(mail)
+{
+    let check="@gmail.com";
+
+    if(mail.endsWith(check))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+console.log(verifyEmail("jiyaedu7718@gmail.in"))
+
+// check if sentence starts with "Hello";
+function checkSentence(sen)
+{
+    let check="Hello";
+
+    if(sen.startsWith(check))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+console.log(checkSentence("Hello jiyaedu7718@gmail.in"))
