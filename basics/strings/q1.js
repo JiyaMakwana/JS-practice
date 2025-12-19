@@ -194,3 +194,49 @@ function toggleCase(str)
    
 }
 console.log(toggleCase("aBcDe"));
+
+// make a case insensitive comparison between two strings
+function compare(str1,str2)
+{
+   
+    if(str1.toLowerCase()===str2.toLowerCase())
+    {
+        console.log("success");
+    } 
+    else
+    {
+        console.log("error");
+    }  
+}
+
+compare("jiya","JiyA");
+
+//count how many UC letters are is string
+function countUC(str)
+{
+    let count=0;
+    for(let i=0;i<str.length;i++)
+    {
+        if(str[i]===str[i].toUpperCase())
+        {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countUC("JiYaMakwaNA"));
+
+// check if username contains numbers
+function checkUserName(uname)
+{
+    for(let i=0;i<uname.length;i++)
+    {
+        let char=uname.charAt(i);
+        if(char >='0' && char<='9')
+        {
+            return "has numbers";
+        }
+    }
+    return "no numbers";
+}
+console.log(checkUserName("jiya123"));
