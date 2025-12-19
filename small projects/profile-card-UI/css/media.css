@@ -84,7 +84,7 @@
     .img-container img
     {
         position: absolute;
-        bottom:-220px;
+        bottom:-270px;
         left:0px;
         object-fit: cover;
         width: 100%;
