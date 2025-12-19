@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Change the text of a p tag to “Hello JavaScript” using DOM. -->
     <p>Hello</p>
 
@@ -13,30 +13,51 @@
     <h1>Change the color</h1>
 
     <!-- Select an element using getElementById and log it. -->
-     <div id="id-selector">
-        <ul>
-            <li>item-1</li>
-            <li>item-2</li>
-        </ul>
-     </div>
+    <div id="id-selector">
+      <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+      </ul>
+    </div>
 
-     <!-- Select all <p> tags using getElementsByTagName. -->
-        <p>p tag 2</p>
-        <p>p tag 3</p>
-        <p>p tag 4</p>
+    <!-- Select all <p> tags using getElementsByTagName. -->
+    <p>p tag 2</p>
+    <p>p tag 3</p>
+    <p>p tag 4</p>
 
     <!-- Change the background color of the page using JavaScript.     -->
     <!-- Change the text inside a <div> to "Welcome to JavaScript DOM" using innerHTML. -->
-        <div class="inner1">Welcome</div>
+    <div class="inner1">Welcome</div>
 
     <!-- Add a <strong> tag inside a <p> using innerHTML. -->
-        <p id="inner2"></p>
+    <p id="inner2"></p>
 
     <!-- Replace the entire content of a <section> with an <h2> and a <p>. -->
-        <section id="inner3">
-            <p>Old head inner3</p>
-        </section>
-        
+    <section id="inner3">
+      <p>Old head inner3</p>
+    </section>
+
+    <!-- when button is clicked change the text of para -->
+    <button id="paratext">Change para text</button>
+    <p id="changeparaText">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+      quisquam reprehenderit accusamus obcaecati necessitatibus. Iste reiciendis
+      pariatur, omnis vel culpa corrupti voluptatem modi quidem quibusdam
+      incidunt ipsum cum minima repudiandae?
+    </p>
+
+    <!-- change the image src when button is clicked -->
+    <!-- button ref from paratext -->
+     <img src="../small projects/profile-card-UI/assets/background.png" alt="" id="changeSRCimg" width="200px" height="200px">
+
+     <!-- add new li item to an existing ul list -->
+    <ul type="square" id="ulItem">
+        <li>Item 1</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- remove last item from the list -->
+
     <script src="q1.js"></script>
-</body>
+  </body>
 </html>
