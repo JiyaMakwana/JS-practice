@@ -272,3 +272,9 @@ function checkSentence(sen)
     }
 }
 console.log(checkSentence("Hello jiyaedu7718@gmail.in"))
+
+let arr = ["apple", "banana", "mango"];
+console.log(arr.indexOf("banana"));
+console.log(arr.indexOf("grapes"));
+
+
