@@ -277,4 +277,18 @@ let arr = ["apple", "banana", "mango"];
 console.log(arr.indexOf("banana"));
 console.log(arr.indexOf("grapes"));
 
+// check if strings contains any vowel(a,e,i,o,u)
+function hasVowels(str)
+{
+    let vowels="aeiouAEIOU";
+    for(let i=0;i<str.length;i++)
+    {
+        if(vowels.includes(str[i]))
+        {
+            return true;
+        }
+    }
+    return false;
 
+}
+console.log(hasVowels("jiya"));
