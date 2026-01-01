@@ -291,4 +291,4 @@ function hasVowels(str)
     return false;
 
 }
-console.log(hasVowels("jiya"));
+console.log(hasVowels("jea"));
