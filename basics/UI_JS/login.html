@@ -1,0 +1,44 @@
+<!-- 1. Login Page with Validation
+Tech: HTML form + CSS styling + Bootstrap layout + JS logic
+Requirements:
+Create a login form using Bootstrap
+On submit:
+If email empty → alert
+If password < 6 → alert
+Else → show “Login successful” using alert -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body style="background-color:#f5f0ff;">
+     <div class="row m-4 g-3 d-flex justify-content-center align-items-center">
+        <div class="col-auto">
+            <div class="container-sm align-items-center p-4 rounded-4" style="background-color: #ede4ff;">
+                    <form action="">
+                        <h1 class="mb-3 text-center">Login Page</h1>
+                        <label for="email" class="form-label">Email: </label>
+                        <input type="email" name="email" id="email" class="form-control mb-3">
+
+                        <label for="psw" class="form-label">Password: </label>
+                        <input type="password" name="psw" id="psw" class="form-control mb-3">
+
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="Submit" class="btn btn-success" id="submit">
+                        </div>
+                        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="login.js"></script>
+</body>
+</html>
